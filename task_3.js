@@ -1,4 +1,4 @@
-const ADMIN_PASSWORD = 1234;
+const ADMIN_PASSWORD = "adminpass";
 let message;
 
 let input = prompt("Введите пароль администратора");
@@ -12,5 +12,3 @@ if (input === null) {
 }
 
 alert(message);
-
-// Когда вводишь верный и неверный пароль выдает сообщение "Доступ запрещен, неверный пароль!"

@@ -1,7 +1,7 @@
 let country = prompt("Введите страну");
 
 if (country !== null) {
-  country = country.tuLowerCase();
+  country = country.toLowerCase();
 }
 
 let price;
@@ -27,12 +27,8 @@ switch (country) {
 }
 
 if (price !== -1) {
-  country = country.charAt(0).toUpperCase() + countre.slice(1);
+  country = country.charAt(0).toUpperCase() + country.slice(1);
   alert(`Доставка в ${country} будет стоить ${price} кредитов`);
 } else {
   alert("В вашей стране доставка не доступна");
 }
-
-// После запроса "Введите страну" нет продолжения
-
-
